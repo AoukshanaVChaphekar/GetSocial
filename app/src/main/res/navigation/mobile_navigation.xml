@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="www.example.getsocial.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_password"
+        android:name="www.example.getsocial.ui.UpdatePassword.UpdatePasswordFragment"
+        android:label="Update Password"
+        tools:layout="@layout/fragment_update_password" />
+
+    <fragment
+        android:id="@+id/nav_username"
+        android:name="www.example.getsocial.ui.UpdateUserName.UserNameFragment"
+        android:label="Update Username"
+        tools:layout="@layout/fragment_update_username" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="www.example.getsocial.ui.fragment_logout"
+        android:label="Logout"
+        tools:layout="@layout/fragment_logout" />
+</navigation>
